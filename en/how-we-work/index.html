@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+(function(){
+    try {
+        var url = new URL(window.location.href);
+        var forced = url.searchParams.get('lang');
+        if (forced) { localStorage.setItem('a4u_lang', forced); }
+    } catch(e) {}
+})();
+</script>
+
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -164,6 +174,10 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .footer a{color:rgba(255,255,255,.4)}
 .footer a:hover{color:var(--g)}
 @media(max-width:600px){.footer-inner{justify-content:center;text-align:center}}
+
+.nav-lang-mob{display:none;align-items:center;justify-content:center;min-width:46px;height:34px;padding:0 12px;border-radius:18px;background:transparent;border:1.5px solid var(--g);color:var(--g);font-weight:700;font-size:.78rem;text-decoration:none;letter-spacing:.02em;transition:all var(--db) ease;white-space:nowrap}
+.nav-lang-mob:hover{background:var(--g);color:var(--td)}
+@media(max-width:900px){.nav-lang-mob{display:inline-flex;margin-right:10px}}
 </style>
 </head>
 <body>
@@ -188,6 +202,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <li><a href="../../how-we-work/" class="nav-lang">中文</a></li>
 </ul>
 <a href="../#contact" class="nav-cta">Book a call</a>
+<a href="../../how-we-work/?lang=zh" class="nav-lang-mob">中文</a>
 <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></nav>
 <div class="mob-menu" id="mobMenu">
@@ -203,7 +218,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <a href="../#business-model">Business model</a>
     <a href="../#team">Team</a>
     <a href="../#contact">Book a call</a>
-    <a href="../../how-we-work/" style="color:var(--g)">中文版本</a>
 </div>
 <!-- HERO -->
 <section class="sec-hero">

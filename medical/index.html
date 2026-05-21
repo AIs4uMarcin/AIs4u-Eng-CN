@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<script>
+(function(){
+    try {
+        var url = new URL(window.location.href);
+        var forced = url.searchParams.get('lang');
+        var pageName = window.location.pathname.replace(/\/$/, '').split('/').pop();
+        if (forced) {
+            localStorage.setItem('a4u_lang', forced);
+            if (forced === 'en') { window.location.replace('../en/' + pageName + '/'); return; }
+            if (forced === 'zh') { return; }
+        }
+        var saved = localStorage.getItem('a4u_lang');
+        if (saved === 'en') { window.location.replace('../en/' + pageName + '/'); return; }
+        if (saved === 'zh') { return; }
+        var langs = navigator.languages || [navigator.language || ''];
+        var isZh = langs.some(function(l){ return /^zh\b/i.test(l); });
+        if (!isZh) {
+            window.location.replace('../en/' + pageName + '/');
+        }
+    } catch(e) {}
+})();
+</script>
+
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -164,6 +187,10 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .footer a{color:rgba(255,255,255,.4)}
 .footer a:hover{color:var(--g)}
 @media(max-width:600px){.footer-inner{justify-content:center;text-align:center}}
+
+.nav-lang-mob{display:none;align-items:center;justify-content:center;min-width:46px;height:34px;padding:0 12px;border-radius:18px;background:transparent;border:1.5px solid var(--g);color:var(--g);font-weight:700;font-size:.78rem;text-decoration:none;letter-spacing:.02em;transition:all var(--db) ease;white-space:nowrap}
+.nav-lang-mob:hover{background:var(--g);color:var(--td)}
+@media(max-width:900px){.nav-lang-mob{display:inline-flex;margin-right:10px}}
 </style>
 </head>
 <body>
@@ -188,6 +215,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <li><a href="../en/medical/" class="nav-lang">EN</a></li>
 </ul>
 <a href="../#contact" class="nav-cta">预约咨询</a>
+<a href="../en/medical/?lang=en" class="nav-lang-mob">EN</a>
 <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></nav>
 <div class="mob-menu" id="mobMenu">
@@ -203,7 +231,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <a href="../#business-model">商业模式</a>
     <a href="../#team">团队</a>
     <a href="../#contact">预约咨询</a>
-    <a href="../en/medical/" style="color:var(--g)">English version</a>
 </div>
 <!-- HERO -->
 <section class="sec-hero">
