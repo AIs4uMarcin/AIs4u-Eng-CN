@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function(){
+    try {
+        var url = new URL(window.location.href);
+        var forced = url.searchParams.get('lang');
+        if (forced) {
+            localStorage.setItem('a4u_lang', forced);
+            url.searchParams.delete('lang');
+            window.history.replaceState({}, '', url.pathname + url.hash);
+        }
+    } catch(e) {}
+})();
+</script>
+
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service · AIsolution4.you</title>
+<meta name="description" content="Terms of Service for AIsolution4.you - the rules that apply to using our website and engaging our services.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aisolution4.you/en/terms/">
+<link rel="alternate" hreflang="en" href="https://aisolution4.you/en/terms/">
+<link rel="alternate" hreflang="zh" href="https://aisolution4.you/terms/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+
+<style>
+:root{
+    --td:#0d2b2b; --cr:#f6f1e6; --wh:#fffaf0; --g:#c8963e; --gb:rgba(200,150,62,.25);
+    --txt:#0d2b2b; --txm:rgba(13,43,43,.75); --txs:rgba(13,43,43,.55);
+    --fd:'DM Serif Display',serif; --fs:'Plus Jakarta Sans',system-ui,sans-serif;
+    --mx:760px; --cp:24px; --rs:6px; --rm:12px; --rl:18px; --nh:72px;
+    --db:.18s; --ds:.32s; --eo:cubic-bezier(.4,.0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fs);background:var(--cr);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--mx);margin:0 auto;padding:0 var(--cp)}
+.navbar{position:sticky;top:0;z-index:100;background:var(--td);height:var(--nh);display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1240px;width:100%;margin:0 auto;padding:0 var(--cp);display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--wh);font-family:var(--fd);font-size:1.1rem}
+.nav-logo img{height:32px;width:auto}
+.nav-back{color:var(--g);text-decoration:none;font-size:.85rem;font-weight:600;padding:8px 16px;border:1.5px solid var(--gb);border-radius:var(--rs);transition:all var(--db) ease}
+.nav-back:hover{background:var(--g);color:var(--td);border-color:var(--g)}
+main{padding:60px 0 100px}
+.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--g);font-weight:600;margin-bottom:18px}
+h1{font-family:var(--fd);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1;color:var(--txt);margin-bottom:14px;letter-spacing:-.01em}
+.lead{font-size:1.05rem;color:var(--txm);margin-bottom:48px;max-width:600px}
+.meta{display:inline-block;padding:6px 12px;background:rgba(13,43,43,.06);border-radius:var(--rs);font-size:.75rem;color:var(--txs);margin-bottom:40px}
+h2{font-family:var(--fd);font-size:1.6rem;margin:48px 0 18px;color:var(--txt);letter-spacing:-.01em}
+h3{font-family:var(--fs);font-size:1.05rem;font-weight:700;margin:28px 0 10px;color:var(--txt)}
+p{margin-bottom:14px;color:var(--txm)}
+ul,ol{margin:8px 0 18px 22px}
+li{margin-bottom:6px;color:var(--txm)}
+strong{color:var(--txt);font-weight:600}
+a{color:var(--g);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+.callout{background:rgba(200,150,62,.08);border-left:3px solid var(--g);padding:18px 22px;margin:24px 0;border-radius:0 var(--rs) var(--rs) 0;font-size:.95rem}
+.callout p:last-child{margin-bottom:0}
+.footer{background:var(--td);color:rgba(255,255,255,.7);padding:32px 0;font-size:.85rem;margin-top:80px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer a{color:rgba(255,255,255,.6);margin-left:12px;text-decoration:none}
+.footer a:hover{color:var(--g)}
+@media(max-width:700px){
+    main{padding:40px 0 60px}
+    .footer-inner{flex-direction:column;text-align:center}
+    .footer a{display:inline-block;margin:0 8px}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="../" class="nav-logo">
+            <img src="../../assets/Logo_z_cieniem.png" alt="AIsolution4.you">
+            <span>AIsolution4.you</span>
+        </a>
+        <a href="../" class="nav-back">← Back to site</a>
+    </div>
+</nav>
+
+<main>
+<div class="container">
+
+<div class="eyebrow">Legal · Terms of Engagement</div>
+<h1>Terms of Service.</h1>
+<p class="lead">The rules that apply to using this website and to engaging AIsolution4.you for services.</p>
+<div class="meta">Last updated: 21 May 2026</div>
+
+<div class="callout">
+<p><strong>Plain-English summary:</strong> This website is for informational purposes. Any actual engagement is governed by a separate, signed Service Agreement that takes precedence over these Terms. Nothing on the website is a binding offer until contracted in writing.</p>
+</div>
+
+<h2>1. About these Terms</h2>
+<p>These Terms of Service govern your use of the website operated by <strong>AIsolution4.you Sp. z o.o.</strong>, with its registered office in Poznań, Poland (hereinafter "AIsolution4.you", "we", "us").</p>
+<p>By accessing or using this website, you agree to be bound by these Terms. If you do not agree, please discontinue use of the website.</p>
+
+<h2>2. Nature of website content</h2>
+<p>All content on this website - including service descriptions, pricing structures, case examples and methodology - is provided for general informational purposes and is <strong>not</strong> a binding contractual offer within the meaning of Article 66 of the Polish Civil Code or analogous provisions in other jurisdictions.</p>
+<p>A binding commercial relationship between you and AIsolution4.you arises only upon execution of a written <strong>Service Agreement</strong> signed by both parties.</p>
+
+<h2>3. Engaging our services</h2>
+
+<h3>3.1 The process</h3>
+<ol>
+    <li>You contact us via the website form, email, or Calendly to schedule a discovery call.</li>
+    <li>We conduct an initial 30-minute conversation at no charge.</li>
+    <li>If we believe we can deliver value, we issue a written proposal with scope, deliverables, timeline, fees and KPIs.</li>
+    <li>Upon acceptance, a Service Agreement is signed by both parties before any work commences.</li>
+</ol>
+
+<h3>3.2 Fee structure</h3>
+<p>Our typical commercial model combines:</p>
+<ul>
+    <li>A <strong>predictable monthly Fixed Cost</strong> covering team time and operational expenses</li>
+    <li>A <strong>Success Bonus</strong> tied to achievement of pre-agreed KPIs defined during the engagement's Phase 1</li>
+</ul>
+<p>Specific amounts, KPI thresholds, payment terms and other commercial details are negotiated and documented in the individual Service Agreement.</p>
+
+<h2>4. Intellectual property</h2>
+
+<h3>4.1 Our content</h3>
+<p>The website design, copy, graphics, video content, code and methodology are owned by AIsolution4.you or our licensors and are protected by Polish and international intellectual property laws. Unauthorised reproduction, redistribution or commercial use is prohibited.</p>
+
+<h3>4.2 Client deliverables</h3>
+<p>Under our engagements, once fees are paid in full, the client owns all deliverables created specifically for them - including code, content, brand assets, CRM/ERP configurations and dashboards. We retain the right to use generalised methodology, anonymised insights and aggregate know-how for our other work.</p>
+
+<h3>4.3 Third-party platforms</h3>
+<p>Where we configure accounts on third-party platforms (Google Ads, Meta, Allegro, HubSpot, etc.) on the client's behalf, these accounts are <strong>opened in the client's name</strong> with credentials they own. The platforms' own terms of service apply to those accounts.</p>
+
+<h2>5. Acceptable use of the website</h2>
+<p>You agree not to:</p>
+<ul>
+    <li>Use the website for any unlawful purpose or in violation of these Terms</li>
+    <li>Attempt to gain unauthorised access to any portion of the website or its underlying systems</li>
+    <li>Scrape, harvest or extract data systematically without our written consent</li>
+    <li>Use automated systems (bots, crawlers) to overload our infrastructure</li>
+    <li>Reproduce or republish website content commercially without permission</li>
+    <li>Misrepresent AIsolution4.you, our services or any commercial terms publicly</li>
+</ul>
+
+<h2>6. Disclaimers and limitation of liability</h2>
+
+<h3>6.1 Informational content</h3>
+<p>Information on the website is provided "as is" without warranties of any kind. While we take reasonable care to keep content accurate and up to date, we do not warrant that it is error-free, complete or current.</p>
+
+<h3>6.2 No professional advice via the website</h3>
+<p>Articles, case studies and general guidance on the website do not constitute legal, tax, financial or strategic advice for your specific situation. Such advice is only provided under a signed engagement.</p>
+
+<h3>6.3 Liability under engagements</h3>
+<p>For actual engagements, the limits of our liability are defined in the individual Service Agreement and are typically capped at the fees paid by the client in the 12 months preceding the event giving rise to the claim. The Service Agreement always takes precedence over these Terms in respect of any specific engagement.</p>
+
+<h3>6.4 Third-party links</h3>
+<p>The website may contain links to third-party sites (Calendly, our partners, regulators, etc.). We are not responsible for the content, accuracy or practices of third-party sites.</p>
+
+<h2>7. Data protection</h2>
+<p>Our handling of personal data is described in detail in the <a href="../privacy/">Privacy Policy</a>, which forms an integral part of these Terms.</p>
+
+<h2>8. Modifications</h2>
+<p>We may update these Terms from time to time. Material changes will be communicated via a notice on the website. The "Last updated" date at the top reflects the most recent version. Continued use of the website after changes constitutes acceptance.</p>
+
+<h2>9. Governing law and jurisdiction</h2>
+<p>These Terms are governed by Polish law. Any disputes shall be resolved by the competent courts of Poznań, Poland, except where mandatory consumer protection rules of your country of residence apply.</p>
+
+<h2>10. Contact</h2>
+<p>For any questions about these Terms:</p>
+<p><strong>AIsolution4.you Sp. z o.o.</strong><br>
+Email: <a href="mailto:contact@aisolution4.you">contact@aisolution4.you</a><br>
+Address: Poznań, Poland</p>
+
+</div>
+</main>
+
+<footer class="footer">
+<div class="container">
+    <div class="footer-inner">
+        <span>© 2025 AIsolution4.you · Poznań, Poland</span>
+        <div>
+            <a href="../">Home</a>
+            <a href="../privacy/">Privacy Policy</a>
+            <a href="../../terms/?lang=zh">中文</a>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>

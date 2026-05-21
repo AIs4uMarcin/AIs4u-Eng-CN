@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>
+(function(){
+    try {
+        var url = new URL(window.location.href);
+        var forced = url.searchParams.get('lang');
+        if (forced) {
+            localStorage.setItem('a4u_lang', forced);
+            if (forced === 'en') { window.location.replace('../en/privacy/'); return; }
+            if (forced === 'zh') {
+                url.searchParams.delete('lang');
+                window.history.replaceState({}, '', url.pathname + url.hash);
+                return;
+            }
+        }
+        var saved = localStorage.getItem('a4u_lang');
+        if (saved === 'en') { window.location.replace('../en/privacy/'); return; }
+    } catch(e) {}
+})();
+</script>
+
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 · AIsolution4.you</title>
+<meta name="description" content="AIsolution4.you 隐私政策 - 我们如何按照 GDPR 收集、处理与保护您的个人数据。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aisolution4.you/privacy/">
+<link rel="alternate" hreflang="en" href="https://aisolution4.you/en/privacy/">
+<link rel="alternate" hreflang="zh" href="https://aisolution4.you/privacy/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+
+<style>
+:root{
+    --td:#0d2b2b; --cr:#f6f1e6; --wh:#fffaf0; --g:#c8963e; --gb:rgba(200,150,62,.25);
+    --txt:#0d2b2b; --txm:rgba(13,43,43,.75); --txs:rgba(13,43,43,.55);
+    --fd:'DM Serif Display','Noto Serif SC',serif; --fs:'Noto Sans SC','Plus Jakarta Sans',system-ui,sans-serif;
+    --mx:760px; --cp:24px; --rs:6px; --rm:12px; --rl:18px; --nh:72px;
+    --db:.18s; --ds:.32s; --eo:cubic-bezier(.4,.0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fs);background:var(--cr);color:var(--txt);line-height:1.75;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--mx);margin:0 auto;padding:0 var(--cp)}
+.navbar{position:sticky;top:0;z-index:100;background:var(--td);height:var(--nh);display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1240px;width:100%;margin:0 auto;padding:0 var(--cp);display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--wh);font-family:var(--fd);font-size:1.1rem}
+.nav-logo img{height:32px;width:auto}
+.nav-back{color:var(--g);text-decoration:none;font-size:.85rem;font-weight:600;padding:8px 16px;border:1.5px solid var(--gb);border-radius:var(--rs);transition:all var(--db) ease}
+.nav-back:hover{background:var(--g);color:var(--td);border-color:var(--g)}
+main{padding:60px 0 100px}
+.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--g);font-weight:600;margin-bottom:18px}
+h1{font-family:var(--fd);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.2;color:var(--txt);margin-bottom:14px;letter-spacing:-.01em}
+.lead{font-size:1.05rem;color:var(--txm);margin-bottom:48px;max-width:600px}
+.meta{display:inline-block;padding:6px 12px;background:rgba(13,43,43,.06);border-radius:var(--rs);font-size:.75rem;color:var(--txs);margin-bottom:40px}
+h2{font-family:var(--fd);font-size:1.6rem;margin:48px 0 18px;color:var(--txt);letter-spacing:-.01em}
+h3{font-family:var(--fs);font-size:1.05rem;font-weight:700;margin:28px 0 10px;color:var(--txt)}
+p{margin-bottom:14px;color:var(--txm)}
+ul,ol{margin:8px 0 18px 22px}
+li{margin-bottom:6px;color:var(--txm)}
+strong{color:var(--txt);font-weight:600}
+a{color:var(--g);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+.callout{background:rgba(200,150,62,.08);border-left:3px solid var(--g);padding:18px 22px;margin:24px 0;border-radius:0 var(--rs) var(--rs) 0;font-size:.95rem}
+.callout p:last-child{margin-bottom:0}
+.footer{background:var(--td);color:rgba(255,255,255,.7);padding:32px 0;font-size:.85rem;margin-top:80px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer a{color:rgba(255,255,255,.6);margin-left:12px;text-decoration:none}
+.footer a:hover{color:var(--g)}
+@media(max-width:700px){
+    main{padding:40px 0 60px}
+    .footer-inner{flex-direction:column;text-align:center}
+    .footer a{display:inline-block;margin:0 8px}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="../" class="nav-logo">
+            <img src="../assets/Logo_z_cieniem.png" alt="AIsolution4.you">
+            <span>AIsolution4.you</span>
+        </a>
+        <a href="../" class="nav-back">← 返回首页</a>
+    </div>
+</nav>
+
+<main>
+<div class="container">
+
+<div class="eyebrow">法律声明 · GDPR 合规</div>
+<h1>隐私政策。</h1>
+<p class="lead">当您访问我们的网站或委托我们提供服务时,我们如何收集、处理并保护您的个人数据。</p>
+<div class="meta">最近更新:2026 年 5 月 21 日</div>
+
+<div class="callout">
+<p><strong>简明说明:</strong>我们只收集回应您的咨询、提供服务、维持网站正常运行所必需的最少数据。我们绝不出售您的数据、绝不用您的数据训练公开 AI 模型,并完全遵循欧盟 GDPR(《通用数据保护条例》)。如希望删除您的数据,请来信 <a href="mailto:contact@aisolution4.you">contact@aisolution4.you</a>,我们将在 30 天内处理。</p>
+</div>
+
+<h2>1. 数据控制者</h2>
+<p>负责处理您个人数据的数据控制者是 <strong>AIsolution4.you Sp. z o.o.</strong>,注册地位于波兰波兹南。</p>
+<p>联系方式:<a href="mailto:contact@aisolution4.you">contact@aisolution4.you</a></p>
+
+<h2>2. 我们收集哪些个人数据</h2>
+
+<h3>2.1 您主动提供的数据</h3>
+<p>当您通过联系表单、邮件,或通过 Calendly 预约会议时,我们会收集:</p>
+<ul>
+    <li>姓名</li>
+    <li>商务邮箱</li>
+    <li>公司名称与您的职位</li>
+    <li>电话号码(可选)</li>
+    <li>留言内容,以及您主动分享的与项目相关的任何上下文信息</li>
+</ul>
+
+<h3>2.2 自动收集的数据</h3>
+<p>当您访问我们的网站时:</p>
+<ul>
+    <li>IP 地址(30 天后匿名化处理)</li>
+    <li>浏览器类型、操作系统、屏幕分辨率</li>
+    <li>访问的页面、停留时间、来源 URL</li>
+    <li>根据 IP 推断的国家级地理位置</li>
+</ul>
+<p>这些数据仅用于安全防护、问题排查和聚合统计。我们不使用跨站追踪 cookie,不将这些数据共享给任何广告网络。</p>
+
+<h2>3. 处理数据的法律依据</h2>
+<p>我们依据 GDPR 第 6 条所规定的下列法律依据处理您的个人数据:</p>
+<ul>
+    <li><strong>履行合同(第 6(1)(b) 条):</strong>当您委托我们提供咨询或落地服务时。</li>
+    <li><strong>合法利益(第 6(1)(f) 条):</strong>用于回复咨询、网站安全防护及聚合统计。</li>
+    <li><strong>同意(第 6(1)(a) 条):</strong>用于您明确选择订阅的可选通讯,如电子简报。</li>
+    <li><strong>法律义务(第 6(1)(c) 条):</strong>用于会计、税务及法定档案存档要求。</li>
+</ul>
+
+<h2>4. 我们如何使用您的数据</h2>
+<ul>
+    <li>回复您的咨询,并准备方案或报价</li>
+    <li>履行您所签订的服务内容</li>
+    <li>开具发票,并履行会计义务</li>
+    <li>通过聚合统计改进网站与服务</li>
+    <li>就进行中的项目与您进行运营沟通</li>
+</ul>
+
+<h2>5. 数据保留期限</h2>
+<ul>
+    <li><strong>咨询信息:</strong>自最后一次联系起 12 个月,如未启动合作则删除。</li>
+    <li><strong>客户数据:</strong>合作期间以及合作结束后 6 年,以满足波兰税法与会计法的要求。</li>
+    <li><strong>网站分析数据:</strong>26 个月,之后删除。</li>
+    <li><strong>简报订阅:</strong>直至您退订。</li>
+</ul>
+
+<h2>6. 数据共享对象</h2>
+<p>我们仅与少数经过严格筛选的数据处理者共享个人数据。所有此类共享均在符合 GDPR 第 28 条要求的书面数据处理协议下进行:</p>
+<ul>
+    <li><strong>Calendly</strong> - 会议预约服务(数据在欧盟/美国处理,适用欧盟标准合同条款)</li>
+    <li><strong>Google Workspace</strong> - 邮件与文档协作(欧盟数据驻留)</li>
+    <li><strong>托管与 CDN 提供商</strong> - 用于网站服务</li>
+    <li><strong>波兰本地的会计师事务所与律师事务所</strong> - 受职业保密义务约束</li>
+</ul>
+<p>我们<strong>不会</strong>将您的个人数据出售给第三方;<strong>不会</strong>将您的数据共享给广告网络;<strong>不会</strong>用您的数据训练任何公开的 AI 模型。</p>
+
+<h2>7. 跨境数据传输</h2>
+<p>当数据被传输至欧洲经济区之外(例如传输至 Calendly 在美国的服务器),我们将依靠欧盟批准的标准合同条款及额外的保障措施,确保您的数据获得对等水平的保护。</p>
+
+<h2>8. 您在 GDPR 下享有的权利</h2>
+<p>就您的个人数据,您享有下列权利:</p>
+<ul>
+    <li><strong>访问权</strong> - 获取我们持有的与您相关的个人数据副本</li>
+    <li><strong>更正权</strong> - 更正不准确或不完整的数据</li>
+    <li><strong>删除权</strong>(被遗忘权)- 请求删除您的数据</li>
+    <li><strong>限制处理权</strong> - 限制我们对您数据的处理方式</li>
+    <li><strong>数据可移植权</strong> - 以结构化、机器可读的格式接收您的数据</li>
+    <li><strong>反对权</strong> - 反对基于合法利益进行的处理</li>
+    <li><strong>撤回同意权</strong> - 随时撤回,且不影响此前合法处理的有效性</li>
+    <li><strong>投诉权</strong> - 向波兰个人数据保护局(UODO,<a href="https://uodo.gov.pl" target="_blank" rel="noopener">uodo.gov.pl</a>)或您居住国的监管机构提起投诉</li>
+</ul>
+<p>如希望行使上述任一权利,请来信 <a href="mailto:contact@aisolution4.you">contact@aisolution4.you</a>。我们将在 30 天内回复。</p>
+
+<h2>9. Cookie 与追踪</h2>
+<p>本网站仅使用网站正常运行所必需的核心 cookie,以及一个最简化的第一方分析 cookie。我们<strong>不使用</strong>任何第三方广告 cookie、跨站追踪像素或社交网络指纹识别技术。</p>
+
+<h2>10. 数据安全</h2>
+<p>我们采取与风险水平相匹配的技术与组织措施,包括:</p>
+<ul>
+    <li>传输中加密(TLS 1.3)与静态存储加密</li>
+    <li>基于"最小权限"原则的访问控制</li>
+    <li>在封闭环境中运行的 AI 工作流,由通过波兰国家安全审查的 CTO 审计把关</li>
+    <li>面向受监管行业客户的 NIS2 对齐运营实践</li>
+    <li>常规备份与经过演练的灾难恢复流程</li>
+</ul>
+
+<h2>11. 未成年人隐私</h2>
+<p>我们的网站与服务面向商业客户。我们不会有意收集 16 岁以下未成年人的个人数据。</p>
+
+<h2>12. 政策更新</h2>
+<p>我们可能会不定期更新本《隐私政策》。重大变更将通过网站公告通知。页面顶部的"最近更新"日期反映最新版本。</p>
+
+<h2>13. 联系我们</h2>
+<p>有关隐私的任何问题、请求或投诉:</p>
+<p><strong>AIsolution4.you Sp. z o.o.</strong><br>
+邮箱:<a href="mailto:contact@aisolution4.you">contact@aisolution4.you</a><br>
+地址:波兰 波兹南</p>
+
+</div>
+</main>
+
+<footer class="footer">
+<div class="container">
+    <div class="footer-inner">
+        <span>© 2025 AIsolution4.you · 波兰 波兹南</span>
+        <div>
+            <a href="../">首页</a>
+            <a href="../terms/">服务条款</a>
+            <a href="../en/privacy/?lang=en">English</a>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
