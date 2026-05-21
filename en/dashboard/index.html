@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>客户仪表盘 — 实时销售、营销与物流 · AIsolution4.you</title>
-<meta name="description" content="一份实时仪表盘,让海外总部从远端追踪您在波兰的整个运营。销售、效果、物流、营销 — 所有 KPI 一屏实时呈现。移动端友好,多币种,可导出。">
+<title>Client Dashboard — Real-time Sales, Marketing &amp; Logistics · AIsolution4.you</title>
+<meta name="description" content="A single live dashboard for HQ tracking your Polish operation from abroad. Sales, performance, logistics and marketing — every KPI in one real-time view. Mobile-friendly, multi-currency, exportable.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://aisolution4.you/dashboard/">
+<link rel="canonical" href="https://aisolution4.you/en/dashboard/">
 <link rel="alternate" hreflang="en" href="https://aisolution4.you/en/dashboard/">
 <link rel="alternate" hreflang="zh" href="https://aisolution4.you/dashboard/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="客户仪表盘 — 实时洞察您的波兰运营">
-<meta property="og:description" content="销售、效果、物流、营销 — 一个平台,实时呈现。为海外总部远程追踪而设计。">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="Client Dashboard — Real-time view of your Polish operation">
+<meta property="og:description" content="Sales, performance, logistics and marketing — one platform, real-time. Built for HQ tracking from abroad.">
+<meta property="og:locale" content="en_US">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--td:#0d2b2b;--g:#c8963e;--gl:#dbb36a;--gs:rgba(200,150,62,.08);--gb:rgba(200,150,62,.15);--cr:#faf6ef;--wh:#fff;--txd:#1a1a1a;--txm:#4a4a4a;--ok:#34998b;--okl:#5cb8ac;--bad:#c8693e;--info:#5a8ec4;--fd:'DM Serif Display','Noto Serif SC',Georgia,serif;--fb:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace;--th:clamp(2.1rem,4.5vw,3.2rem);--th2:clamp(1.5rem,2.8vw,2.1rem);--tb:clamp(.95rem,1.05vw,1.1rem);--ts:clamp(.88rem,.95vw,.95rem);--tl:.72rem;--sp:clamp(50px,7vw,90px);--mx:1100px;--cp:24px;--nh:64px;--rs:6px;--rl:16px;--rp:40px;--eo:cubic-bezier(.16,1,.3,1);--db:300ms;--ds:500ms}
+:root{--td:#0d2b2b;--g:#c8963e;--gl:#dbb36a;--gs:rgba(200,150,62,.08);--gb:rgba(200,150,62,.15);--cr:#faf6ef;--wh:#fff;--txd:#1a1a1a;--txm:#4a4a4a;--ok:#34998b;--okl:#5cb8ac;--bad:#c8693e;--info:#5a8ec4;--fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace;--th:clamp(2.1rem,4.5vw,3.2rem);--th2:clamp(1.5rem,2.8vw,2.1rem);--tb:clamp(.95rem,1.05vw,1.1rem);--ts:clamp(.88rem,.95vw,.95rem);--tl:.72rem;--sp:clamp(50px,7vw,90px);--mx:1100px;--cp:24px;--nh:64px;--rs:6px;--rl:16px;--rp:40px;--eo:cubic-bezier(.16,1,.3,1);--db:300ms;--ds:500ms}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;font-size:16px;scroll-padding-top:var(--nh)}
 body{font-family:var(--fb);color:var(--txd);background:var(--cr);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6}
@@ -367,38 +367,38 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <nav class="navbar" id="navbar"><div class="nav-inner">
 <a href="../" class="nav-logo"><img src="../assets/Logo_z_cieniem.png" alt="AIsolution4.you" width="32" height="37"><span>AIsolution4.you</span></a>
 <ul class="nav-links">
-    <li><button class="nav-dd">行业领域 <svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="dd-panel">
-        <a href="../manufacturers/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M3 21V10l9-7 9 7v11"/><path d="M9 21V12h6v9"/></svg></div><div><div class="dd-lbl">制造业与 B2B</div><div class="dd-desc">经销商与渠道网络</div></div></a>
-        <a href="../medical/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5v1H7V7a5 5 0 015-5z"/><rect x="3" y="8" width="18" height="14" rx="2"/><path d="M12 12v4m-2-2h4"/></svg></div><div><div class="dd-lbl">医疗医药</div><div class="dd-desc">医疗器械、医药、诊所、健康科技</div></div></a>
-        <a href="../retail/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M6 2L4 6v14a2 2 0 002 2h12a2 2 0 002-2V6l-2-4z"/><path d="M4 6h16M10 10a2 2 0 004 0"/></svg></div><div><div class="dd-lbl">零售与 D2C 品牌</div><div class="dd-desc">电商平台、零售连锁、消费品牌</div></div></a>
+    <li><button class="nav-dd">Sectors <svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="dd-panel">
+        <a href="../manufacturers/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M3 21V10l9-7 9 7v11"/><path d="M9 21V12h6v9"/></svg></div><div><div class="dd-lbl">Manufacturers &amp; B2B</div><div class="dd-desc">Distributor &amp; channel networks</div></div></a>
+        <a href="../medical/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5v1H7V7a5 5 0 015-5z"/><rect x="3" y="8" width="18" height="14" rx="2"/><path d="M12 12v4m-2-2h4"/></svg></div><div><div class="dd-lbl">Medical sector</div><div class="dd-desc">Devices, pharma, clinics, healthtech</div></div></a>
+        <a href="../retail/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M6 2L4 6v14a2 2 0 002 2h12a2 2 0 002-2V6l-2-4z"/><path d="M4 6h16M10 10a2 2 0 004 0"/></svg></div><div><div class="dd-lbl">Retail &amp; D2C brands</div><div class="dd-desc">Marketplaces, retail chains, consumer</div></div></a>
     </div></li>
-    <li><button class="nav-dd">能力体系 <svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="dd-panel">
-        <a href="../performance/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 5-7"/></svg></div><div><div class="dd-lbl">效果营销</div><div class="dd-desc">付费投放、SEO 与 GEO &mdash; 以营收为衡量标准</div></div></a>
-        <a href="../ai-tools/"><div class="dd-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><div><div class="dd-lbl">AI 工具与数字化</div><div class="dd-desc">CRM/ERP、数据看板、AI 接待</div></div></a>
-        <a href="../dashboard/"><div class="dd-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></div><div><div class="dd-lbl">客户数据看板</div><div class="dd-desc">总部远程实时掌控波兰业务</div></div></a>
+    <li><button class="nav-dd">Capabilities <svg class="chv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="dd-panel">
+        <a href="../performance/"><div class="dd-ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 5-7"/></svg></div><div><div class="dd-lbl">Performance Marketing</div><div class="dd-desc">Paid, SEO &amp; GEO &mdash; measured against revenue</div></div></a>
+        <a href="../ai-tools/"><div class="dd-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><div><div class="dd-lbl">AI Tools &amp; Digitalization</div><div class="dd-desc">CRM/ERP, dashboards, AI reception</div></div></a>
+        <a href="../dashboard/"><div class="dd-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg></div><div><div class="dd-lbl">Client Dashboard</div><div class="dd-desc">Real-time view for HQ from abroad</div></div></a>
     </div></li>
-    <li><a href="../what-we-do/">我们的服务</a></li>
-    <li><a href="../how-we-work/">合作方式</a></li>
-    <li><a href="../#team">团队</a></li>
-    <li><a href="../en/dashboard/" class="nav-lang">EN</a></li>
+    <li><a href="../what-we-do/">What we do</a></li>
+    <li><a href="../how-we-work/">How we work</a></li>
+    <li><a href="../#team">Team</a></li>
+    <li><a href="../../dashboard/" class="nav-lang">中文</a></li>
 </ul>
-<a href="../#contact" class="nav-cta">预约咨询</a>
+<a href="../#contact" class="nav-cta">Book a call</a>
 <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></nav>
 <div class="mob-menu" id="mobMenu">
-    <a href="../">中文首页</a>
-    <a href="../manufacturers/">制造业与 B2B</a>
-    <a href="../medical/">医疗医药</a>
-    <a href="../retail/">零售与 D2C 品牌</a>
-    <a href="../performance/" style="color:var(--g)">效果营销</a>
-    <a href="../ai-tools/" style="color:var(--g)">AI 工具与数字化</a>
-    <a href="../dashboard/" style="color:var(--g)">客户数据看板</a>
-    <a href="../what-we-do/">我们的服务</a>
-    <a href="../how-we-work/">合作方式</a>
-    <a href="../#business-model">商业模式</a>
-    <a href="../#team">团队</a>
-    <a href="../#contact">预约咨询</a>
-    <a href="../en/dashboard/" style="color:var(--g)">English version</a>
+    <a href="../">English homepage</a>
+    <a href="../manufacturers/">Manufacturers &amp; B2B</a>
+    <a href="../medical/">Medical sector</a>
+    <a href="../retail/">Retail &amp; D2C brands</a>
+    <a href="../performance/" style="color:var(--g)">Performance Marketing</a>
+    <a href="../ai-tools/" style="color:var(--g)">AI Tools &amp; Digitalization</a>
+    <a href="../dashboard/" style="color:var(--g)">Client Dashboard</a>
+    <a href="../what-we-do/">What we do</a>
+    <a href="../how-we-work/">How we work</a>
+    <a href="../#business-model">Business model</a>
+    <a href="../#team">Team</a>
+    <a href="../#contact">Book a call</a>
+    <a href="../../dashboard/" style="color:var(--g)">中文版本</a>
 </div>
 
 <!-- HERO -->
@@ -409,26 +409,26 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <nav class="sec-crumb">
         <a href="../">AIsolution4.you</a>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
-        <a href="../ai-tools/">AI 工具与数字化</a>
+        <a href="../ai-tools/">AI Tools &amp; Digitalization</a>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
-        <span>客户仪表盘</span>
+        <span>Client Dashboard</span>
     </nav>
-    <div class="sec-hero-badge">能力 · 实时客户仪表盘</div>
-    <h1>您在波兰的整个运营,一屏看尽 — <span class="gold">无论您身在地球哪个角落。</span></h1>
-    <p class="lead">一份实时仪表盘,让总部完整看见波兰项目的全貌:销售管道与营收、当下效果、物流与履约、营销投入与回报 — 全部集中在一个平台,持续刷新。专为那些需要从海外远程监控和驾驭运营、不愿等月度 PDF 报告的高管而打造。</p>
+    <div class="sec-hero-badge">Capability · Real-time Client Dashboard</div>
+    <h1>Your Polish operation on one screen &mdash; <span class="gold">from anywhere in the world.</span></h1>
+    <p class="lead">A single live dashboard that gives HQ a complete view of the Polish programme: sales pipeline and revenue, current performance, logistics and fulfilment, marketing spend and return &mdash; all in one platform, refreshed continuously. Built for executives who need to monitor and steer the operation from abroad without waiting for monthly PDFs.</p>
     <div class="sec-hero-ctas">
-        <a href="../#contact" class="btn btn-primary">预约现场演示 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="#mockup" class="btn btn-secondary">查看仪表盘</a>
+        <a href="../#contact" class="btn btn-primary">Book a live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#mockup" class="btn btn-secondary">See the dashboard</a>
     </div>
 </div>
 </div>
 
 <div class="container" style="margin-top:56px;position:relative;z-index:2">
 <div class="sec-strip-grid" style="margin:0">
-    <div class="sec-strip-item"><div class="sec-strip-val">实时</div><div class="sec-strip-lbl">数据持续刷新 — 不用再等月度报告</div></div>
-    <div class="sec-strip-item"><div class="sec-strip-val">一个登录</div><div class="sec-strip-lbl">销售、营销、物流、运营 — 一份统一视图</div></div>
-    <div class="sec-strip-item"><div class="sec-strip-val">移动优先</div><div class="sec-strip-lbl">手机、平板全功能可用 — 高管出差也能掌控</div></div>
-    <div class="sec-strip-item"><div class="sec-strip-val">总部友好</div><div class="sec-strip-lbl">多币种、多语言,可导出用于董事会汇报</div></div>
+    <div class="sec-strip-item"><div class="sec-strip-val">Real-time</div><div class="sec-strip-lbl">data refreshed continuously &mdash; never wait for a monthly report</div></div>
+    <div class="sec-strip-item"><div class="sec-strip-val">Single login</div><div class="sec-strip-lbl">sales, marketing, logistics &amp; ops &mdash; in one unified view</div></div>
+    <div class="sec-strip-item"><div class="sec-strip-val">Mobile-first</div><div class="sec-strip-lbl">full functionality on phone &amp; tablet for executive travel</div></div>
+    <div class="sec-strip-item"><div class="sec-strip-val">HQ-ready</div><div class="sec-strip-lbl">multi-currency, multi-language, exportable for board meetings</div></div>
 </div>
 </div>
 </section>
@@ -437,9 +437,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <section class="sec-section midcr" id="mockup">
 <div class="container-wide">
     <div class="sec-section-header">
-        <div class="sec-eyebrow">您实际看到的内容</div>
-        <h2>概览页 — <em>您在波兰的整个运营</em>,一眼看穿。</h2>
-        <p>这是您每次登录看到的着陆视图。四大板块的关键数字、实时动态流、以及最常被问到的问题 — 在您点击任何东西之前都已经有答案。需要深入任何一个面板,点进去就有详尽视图。</p>
+        <div class="sec-eyebrow">What you actually see</div>
+        <h2>The Overview &mdash; <em>your whole Polish operation</em>, at a glance.</h2>
+        <p>This is the landing view every time you log in. Headline numbers across all four areas, the live activity stream, and the most-asked questions answered before you click anything. Drill into any panel for the deep view.</p>
     </div>
 
     <div class="mockup-wrap">
@@ -460,48 +460,48 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                     <div class="mu-side-brand">
                         <div class="mu-side-brand-ico">A</div>
                         <div>
-                            <div class="mu-side-brand-label">贵公司波兰</div>
-                            <div class="mu-side-brand-sub">项目 · 进行中</div>
+                            <div class="mu-side-brand-label">YourCompany PL</div>
+                            <div class="mu-side-brand-sub">Programme · Active</div>
                         </div>
                     </div>
-                    <div class="mu-side-section">实时视图</div>
+                    <div class="mu-side-section">Live view</div>
                     <nav class="mu-nav">
                         <div class="mu-nav-item active">
                             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
-                            概览
+                            Overview
                         </div>
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-7"/></svg>
-                            销售
+                            Sales
                             <span class="badge">47</span>
                         </div>
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="6"/></svg>
-                            营销
+                            Marketing
                         </div>
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v12H3z"/><path d="M9 21V12h6v9"/></svg>
-                            物流
+                            Logistics
                             <span class="badge">3</span>
                         </div>
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 008 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H2a2 2 0 010-4h.09A1.65 1.65 0 004.6 8a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 008 3.6h.09a1.65 1.65 0 001-1.51V2a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 8v.09a1.65 1.65 0 001.51 1H22a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-                            运营
+                            Operations
                         </div>
                     </nav>
-                    <div class="mu-side-section">报告</div>
+                    <div class="mu-side-section">Reports</div>
                     <nav class="mu-nav">
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                            月度董事会汇报包
+                            Monthly board pack
                         </div>
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                            每周书面更新
+                            Weekly written update
                         </div>
                         <div class="mu-nav-item">
                             <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                            KPI 追踪 vs 第一阶段
+                            KPI tracker vs Phase 1
                         </div>
                     </nav>
                     <div class="mu-side-foot">
@@ -509,7 +509,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                             <div class="mu-user-av">MJ</div>
                             <div>
                                 <div class="mu-user-name">M. Johansson</div>
-                                <div class="mu-user-role">CEO · 总部</div>
+                                <div class="mu-user-role">CEO · HQ</div>
                             </div>
                         </div>
                     </div>
@@ -519,24 +519,24 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                 <div class="mu-main">
                     <div class="mu-top">
                         <div class="mu-top-left">
-                            <div class="mu-top-crumb">项目概览</div>
-                            <div class="mu-top-title">波兰 · 2026 年 Q2</div>
+                            <div class="mu-top-crumb">Programme overview</div>
+                            <div class="mu-top-title">Poland · Q2 2026</div>
                         </div>
                         <div class="mu-top-right">
-                            <span class="mu-pill"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>近 30 天</span>
+                            <span class="mu-pill"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Last 30 days</span>
                             <span class="mu-pill"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>EUR · PLN</span>
-                            <span class="mu-pill acc"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>导出</span>
+                            <span class="mu-pill acc"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>Export</span>
                         </div>
                     </div>
 
                     <!-- KPI row -->
                     <div class="mu-kpi-row">
                         <div class="mu-kpi">
-                            <div class="mu-kpi-lbl">本月营收</div>
+                            <div class="mu-kpi-lbl">Revenue MTD</div>
                             <div class="mu-kpi-val">€ 248.1<span style="font-size:.7em;color:rgba(255,255,255,.45)">k</span></div>
                             <div class="mu-kpi-meta">
                                 <span class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 17l10-10M7 7h10v10"/></svg>+18.2%</span>
-                                对比目标
+                                vs target
                             </div>
                             <svg class="mu-kpi-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
                                 <defs><linearGradient id="sparkG1" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#c8963e" stop-opacity=".5"/><stop offset="100%" stop-color="#c8963e" stop-opacity="0"/></linearGradient></defs>
@@ -545,11 +545,11 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                             </svg>
                         </div>
                         <div class="mu-kpi">
-                            <div class="mu-kpi-lbl">活跃管道</div>
+                            <div class="mu-kpi-lbl">Active pipeline</div>
                             <div class="mu-kpi-val">€ 1.84<span style="font-size:.7em;color:rgba(255,255,255,.45)">M</span></div>
                             <div class="mu-kpi-meta">
                                 <span class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 17l10-10M7 7h10v10"/></svg>47</span>
-                                条商机 · 12 条高意向
+                                deals · 12 hot
                             </div>
                             <svg class="mu-kpi-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
                                 <defs><linearGradient id="sparkG2" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#34998b" stop-opacity=".5"/><stop offset="100%" stop-color="#34998b" stop-opacity="0"/></linearGradient></defs>
@@ -558,22 +558,22 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                             </svg>
                         </div>
                         <div class="mu-kpi">
-                            <div class="mu-kpi-lbl">营销 ROI</div>
+                            <div class="mu-kpi-lbl">Marketing ROI</div>
                             <div class="mu-kpi-val">4.2<span style="font-size:.7em;color:rgba(255,255,255,.45)">×</span></div>
                             <div class="mu-kpi-meta">
                                 <span class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 7L7 17M7 7h10v10"/></svg>-12% CAC</span>
-                                环比上月
+                                vs last month
                             </div>
                             <svg class="mu-kpi-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
                                 <path d="M0 14 L10 15 L20 12 L30 13 L40 11 L50 9 L60 11 L70 8 L80 7 L90 5 L100 4" stroke="#5a8ec4" stroke-width="1.5" fill="none"/>
                             </svg>
                         </div>
                         <div class="mu-kpi">
-                            <div class="mu-kpi-lbl">履约 SLA</div>
+                            <div class="mu-kpi-lbl">Fulfilment SLA</div>
                             <div class="mu-kpi-val">96.4<span style="font-size:.7em;color:rgba(255,255,255,.45)">%</span></div>
                             <div class="mu-kpi-meta">
                                 <span class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"/></svg>142/148</span>
-                                准时
+                                on time
                             </div>
                             <svg class="mu-kpi-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
                                 <path d="M0 8 L20 9 L40 7 L60 8 L80 6 L100 7" stroke="#34998b" stroke-width="1.5" fill="none"/>
@@ -586,13 +586,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                         <div class="mu-card">
                             <div class="mu-card-head">
                                 <div>
-                                    <div class="mu-card-title">按渠道营收</div>
-                                    <div class="mu-card-sub">近 12 周 · 周维度 · 总额</div>
+                                    <div class="mu-card-title">Revenue by channel</div>
+                                    <div class="mu-card-sub">Last 12 weeks · weekly · gross</div>
                                 </div>
                                 <div class="mu-tabs">
                                     <span class="mu-tab on">12W</span>
-                                    <span class="mu-tab">本季</span>
-                                    <span class="mu-tab">本年</span>
+                                    <span class="mu-tab">QTD</span>
+                                    <span class="mu-tab">YTD</span>
                                 </div>
                             </div>
                             <svg class="mu-chart" viewBox="0 0 600 170" preserveAspectRatio="none">
@@ -619,43 +619,43 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                                 <circle cx="600" cy="42" r="6" fill="#c8963e" fill-opacity=".2"/>
                             </svg>
                             <div class="mu-legend">
-                                <span class="mu-lg"><span class="mu-lg-sw" style="background:#c8963e"></span>经销商 · €148.2k</span>
-                                <span class="mu-lg"><span class="mu-lg-sw" style="background:#34998b"></span>直销 · €68.4k</span>
-                                <span class="mu-lg"><span class="mu-lg-sw" style="background:#5a8ec4"></span>零售连锁 · €31.5k</span>
+                                <span class="mu-lg"><span class="mu-lg-sw" style="background:#c8963e"></span>Distributors · €148.2k</span>
+                                <span class="mu-lg"><span class="mu-lg-sw" style="background:#34998b"></span>Direct · €68.4k</span>
+                                <span class="mu-lg"><span class="mu-lg-sw" style="background:#5a8ec4"></span>Retail chains · €31.5k</span>
                             </div>
                         </div>
                         <div class="mu-card">
                             <div class="mu-card-head">
                                 <div>
-                                    <div class="mu-card-title">实时动态</div>
-                                    <div class="mu-card-sub">来自 CRM、ERP、广告账户与 AI 接待</div>
+                                    <div class="mu-card-title">Live activity</div>
+                                    <div class="mu-card-sub">From CRM, ERP, ad accounts &amp; AI reception</div>
                                 </div>
                             </div>
                             <div class="mu-feed">
                                 <div class="mu-feed-item">
                                     <div class="mu-feed-ico win"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
-                                    <div class="mu-feed-text"><strong>成交</strong> · MedTech Polska · €42,000 年度订阅</div>
-                                    <div class="mu-feed-time">12 分钟前</div>
+                                    <div class="mu-feed-text"><strong>Deal closed</strong> · MedTech Polska · €42,000 ARR</div>
+                                    <div class="mu-feed-time">12m</div>
                                 </div>
                                 <div class="mu-feed-item">
                                     <div class="mu-feed-ico mkt"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-7"/></svg></div>
-                                    <div class="mu-feed-text"><strong>投放上线</strong> · LinkedIn Q2 加码 · €8.4k 预算</div>
-                                    <div class="mu-feed-time">38 分钟前</div>
+                                    <div class="mu-feed-text"><strong>Campaign live</strong> · LinkedIn Q2 boost · €8.4k budget</div>
+                                    <div class="mu-feed-time">38m</div>
                                 </div>
                                 <div class="mu-feed-item">
                                     <div class="mu-feed-ico ops"><svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 21h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z"/></svg></div>
-                                    <div class="mu-feed-text"><strong>AI 接待</strong> · 今日打分并路由 8 条高意向线索</div>
-                                    <div class="mu-feed-time">1 小时前</div>
+                                    <div class="mu-feed-text"><strong>AI reception</strong> · 8 hot leads ranked &amp; routed today</div>
+                                    <div class="mu-feed-time">1h</div>
                                 </div>
                                 <div class="mu-feed-item">
                                     <div class="mu-feed-ico alert"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg></div>
-                                    <div class="mu-feed-text"><strong>库存预警</strong> · SKU 12-A1 低于安全库存</div>
-                                    <div class="mu-feed-time">2 小时前</div>
+                                    <div class="mu-feed-text"><strong>Inventory alert</strong> · SKU 12-A1 below safety stock</div>
+                                    <div class="mu-feed-time">2h</div>
                                 </div>
                                 <div class="mu-feed-item">
                                     <div class="mu-feed-ico win"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z"/></svg></div>
-                                    <div class="mu-feed-text"><strong>新签经销商</strong> · 克拉科夫区域已签约</div>
-                                    <div class="mu-feed-time">5 小时前</div>
+                                    <div class="mu-feed-text"><strong>New distributor</strong> · Kraków region signed</div>
+                                    <div class="mu-feed-time">5h</div>
                                 </div>
                             </div>
                         </div>
@@ -666,33 +666,33 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                         <div class="mu-card">
                             <div class="mu-card-head">
                                 <div>
-                                    <div class="mu-card-title">头部经销商</div>
-                                    <div class="mu-card-sub">营收 · 近 90 天</div>
+                                    <div class="mu-card-title">Top distributors</div>
+                                    <div class="mu-card-sub">Revenue · last 90 days</div>
                                 </div>
                             </div>
                             <table class="mu-tbl">
                                 <thead>
-                                    <tr><th>合作伙伴</th><th>区域</th><th class="num" style="text-align:right">营收</th></tr>
+                                    <tr><th>Partner</th><th>Region</th><th class="num" style="text-align:right">Revenue</th></tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><span class="bar" style="width:42px"></span>MedSupply Sp. z o.o.</td>
-                                        <td>华沙</td>
+                                        <td>Warszawa</td>
                                         <td class="num">€ 124.8k</td>
                                     </tr>
                                     <tr>
                                         <td><span class="bar" style="width:34px;background:linear-gradient(90deg,#34998b,#5cb8ac)"></span>Polskie Dystrybucje</td>
-                                        <td>弗罗茨瓦夫</td>
+                                        <td>Wrocław</td>
                                         <td class="num">€ 92.1k</td>
                                     </tr>
                                     <tr>
                                         <td><span class="bar" style="width:26px;background:linear-gradient(90deg,#5a8ec4,#8eb3d8)"></span>BalticPartners</td>
-                                        <td>格但斯克</td>
+                                        <td>Gdańsk</td>
                                         <td class="num">€ 68.4k</td>
                                     </tr>
                                     <tr>
                                         <td><span class="bar" style="width:18px;background:linear-gradient(90deg,#9c6740,#c08862)"></span>Kraków-Tech</td>
-                                        <td>克拉科夫</td>
+                                        <td>Kraków</td>
                                         <td class="num">€ 41.2k</td>
                                     </tr>
                                 </tbody>
@@ -701,8 +701,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                         <div class="mu-card">
                             <div class="mu-card-head">
                                 <div>
-                                    <div class="mu-card-title">营销投入 · 回报</div>
-                                    <div class="mu-card-sub">按渠道 · 本月至今 · 归因数据</div>
+                                    <div class="mu-card-title">Marketing spend · return</div>
+                                    <div class="mu-card-sub">Per channel · MTD · attributed</div>
                                 </div>
                             </div>
                             <div class="mu-chan">
@@ -727,21 +727,21 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                                     <div class="mu-chan-val">3.1×</div>
                                 </div>
                                 <div class="mu-chan-row">
-                                    <div class="mu-chan-name"><span class="mu-chan-dot" style="background:rgba(255,255,255,.4)"></span>原生/RTB</div>
+                                    <div class="mu-chan-name"><span class="mu-chan-dot" style="background:rgba(255,255,255,.4)"></span>Native/RTB</div>
                                     <div class="mu-chan-track"><div class="mu-chan-fill" style="width:32%;background:linear-gradient(90deg,rgba(255,255,255,.5),rgba(255,255,255,.3))"></div></div>
                                     <div class="mu-chan-val">2.1×</div>
                                 </div>
                             </div>
                             <div class="mu-legend" style="margin-top:14px">
-                                <span class="mu-lg" style="font-family:var(--fm);color:rgba(255,255,255,.4);font-size:.62rem">总投入 · €38.6k</span>
-                                <span class="mu-lg" style="font-family:var(--fm);color:var(--ok);font-size:.62rem">归因营收 · € 162.1k</span>
+                                <span class="mu-lg" style="font-family:var(--fm);color:rgba(255,255,255,.4);font-size:.62rem">TOTAL SPEND · €38.6k</span>
+                                <span class="mu-lg" style="font-family:var(--fm);color:var(--ok);font-size:.62rem">ATTRIBUTED REV · € 162.1k</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mu-caption">示意视图。布局、组件与币种会在第一阶段根据您的行业与 KPI 结构定制。<strong>每位客户只看到自己的项目数据 — 从不共享、从不聚合。</strong></div>
+        <div class="mu-caption">Illustrative view. Layout, widgets and currency are tuned to your sector and KPI structure during Phase 1. <strong>Every client sees their own programme data &mdash; never shared, never aggregated.</strong></div>
     </div>
 </div>
 </section>
@@ -750,9 +750,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <section class="sec-section light">
 <div class="container">
     <div class="sec-section-header">
-        <div class="sec-eyebrow">每个面板里有什么</div>
-        <h2>四个深度视图 — <em>分别对应运营的四个侧面。</em></h2>
-        <p>在概览页之上,您可以下钻进入任何一个面板。每个面板呈现的是真正负责那块业务的人需要看见的内容 — 同时也给总部足够的上下文,让每周例会能问到点子上。</p>
+        <div class="sec-eyebrow">What&rsquo;s in every panel</div>
+        <h2>Four deep views &mdash; <em>one for each side of the operation.</em></h2>
+        <p>From the Overview you drill into any of the four panels. Each one shows what the people running that part of the business need to see &mdash; and gives HQ enough context to ask the right questions on the weekly call.</p>
     </div>
 
     <div class="panels-grid">
@@ -763,18 +763,18 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                     <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-7"/><circle cx="11" cy="10" r="1.2"/></svg>
                 </div>
                 <div>
-                    <h3 class="panel-title">销售</h3>
-                    <div class="panel-sub">管道 · 转化 · 合作伙伴</div>
+                    <h3 class="panel-title">Sales</h3>
+                    <div class="panel-sub">Pipeline · Conversion · Partners</div>
                 </div>
             </div>
-            <p class="panel-desc">您的国家负责人每天早上打开的就是这一页。每条商机、每个阶段、每位合作伙伴、每笔成交以及每个卡住的对话 — 都搭配真正有意义的数学:管道流转得有多快、本期能落地多少、谁在卖什么。</p>
+            <p class="panel-desc">The view your country manager opens every morning. Every deal in every stage, every partner, every win and every stalled conversation &mdash; with the math that matters: how fast is the pipeline moving, how much will close, who is selling what.</p>
             <ul class="panel-list">
-                <li><strong>按阶段、按合作伙伴看管道</strong> — 实时商机金额、数量、按概率加权</li>
-                <li><strong>赢单率与商机速度</strong> — 按行业、细分市场和渠道,与您的基线对比</li>
-                <li><strong>头部经销商与重点客户</strong> — 营收、增长、最近一次联系、下一步动作</li>
-                <li><strong>营收对照目标</strong> — 月、季、年度累计,第一阶段 KPI 线清晰可见</li>
-                <li><strong>AI 接待筛出的高意向线索</strong> — 经过打分、转写,5 分钟内自动路由</li>
-                <li><strong>预测</strong> — 加权管道,看本月与下月能落地多少</li>
+                <li><strong>Pipeline by stage &amp; partner</strong> &mdash; live deal value, count, weighted by probability</li>
+                <li><strong>Win rate &amp; deal velocity</strong> &mdash; by sector, segment and channel, vs your baseline</li>
+                <li><strong>Top distributors &amp; key accounts</strong> &mdash; revenue, growth, last contact, next step</li>
+                <li><strong>Revenue vs target</strong> &mdash; MTD, QTD, YTD with the Phase-1 KPI line visible</li>
+                <li><strong>Hot leads from AI reception</strong> &mdash; ranked, transcribed, routed in &lt;5 minutes</li>
+                <li><strong>Forecast</strong> &mdash; weighted pipeline closing this month &amp; next</li>
             </ul>
         </article>
 
@@ -785,18 +785,18 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                     <svg viewBox="0 0 24 24"><path d="M3 11l18-8v18l-18-8z"/><path d="M11 11v9"/></svg>
                 </div>
                 <div>
-                    <h3 class="panel-title">营销</h3>
-                    <div class="panel-sub">投入 · ROI · 归因</div>
+                    <h3 class="panel-title">Marketing</h3>
+                    <div class="panel-sub">Spend · ROI · Attribution</div>
                 </div>
             </div>
-            <p class="panel-desc">每一波兰兹罗提投入、每一欧元回报,都追溯到挣到它的那一波投放。再也不会有各家代理商各发一份 PDF、数字还对不上的情况 — 一个归因模型、一个权威数据源,持续刷新。</p>
+            <p class="panel-desc">Every złoty spent and every euro returned, tracked to the campaign that earned it. No more separate agency PDFs that disagree on the numbers &mdash; one attribution model, one source of truth, refreshed continuously.</p>
             <ul class="panel-list">
-                <li><strong>各渠道投入</strong> — Google、Meta、LinkedIn、原生/RTB、SEO 与 GEO 投入</li>
-                <li><strong>各渠道回报</strong> — 归因营收、ROAS、贡献毛利</li>
-                <li><strong>CAC 与 LTV 分群视图</strong> — 综合值与各渠道值,按周分群</li>
-                <li><strong>多触点归因</strong> — 首触点、末触点与加权 — 经过对账整合</li>
-                <li><strong>投放 ↔ KPI 对应表</strong> — 每一波投放都绑定其服务的业务 KPI</li>
-                <li><strong>内容产出</strong> — AI 量产内容 + 头部资产由波兰真人演员拍摄</li>
+                <li><strong>Spend per channel</strong> &mdash; Google, Meta, LinkedIn, native/RTB, SEO &amp; GEO investment</li>
+                <li><strong>Return per channel</strong> &mdash; attributed revenue, ROAS, contribution margin</li>
+                <li><strong>CAC &amp; LTV cohort view</strong> &mdash; blended and by channel, weekly cohorts</li>
+                <li><strong>Multi-touch attribution</strong> &mdash; first-touch, last-touch and weighted &mdash; reconciled</li>
+                <li><strong>Campaign &harr; KPI mapping</strong> &mdash; every campaign linked to the business KPI it serves</li>
+                <li><strong>Content production</strong> &mdash; AI volume content + real Polish actors on hero assets</li>
             </ul>
         </article>
 
@@ -807,18 +807,18 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                     <svg viewBox="0 0 24 24"><path d="M16 3h5v5"/><path d="M21 3l-6 6"/><path d="M8 21H3v-5"/><path d="M3 21l6-6"/><rect x="10" y="10" width="4" height="4"/></svg>
                 </div>
                 <div>
-                    <h3 class="panel-title">物流</h3>
-                    <div class="panel-sub">履约 · 库存 · 退货</div>
+                    <h3 class="panel-title">Logistics</h3>
+                    <div class="panel-sub">Fulfilment · Inventory · Returns</div>
                 </div>
             </div>
-            <p class="panel-desc">决定销售努力能不能真正变成"已发货营收"的运营那一侧。库存水位、履约 SLA、退货、电商平台表现 — 把"波兰下了一个订单"与"客户手里拿到了产品"之间的一切环节都串起来。</p>
+            <p class="panel-desc">The operational side that decides whether the sales effort actually produces shipped revenue. Stock positions, fulfilment SLA, returns, marketplace performance &mdash; everything that connects an order in Poland to a shipped product in your customer&rsquo;s hands.</p>
             <ul class="panel-list">
-                <li><strong>履约 SLA</strong> — 准时率、延迟件、根因标记</li>
-                <li><strong>库存与缺货预警</strong> — 安全库存告警、滞销品、可售天数</li>
-                <li><strong>退货与投诉</strong> — 比率、原因、按 SKU 拆分,带趋势线</li>
-                <li><strong>电商平台表现</strong> — Allegro、Empik、Mall — 订单数、评分、Buy-Box 份额</li>
-                <li><strong>自提柜与快递组合</strong> — InPost、DPD、DHL 占比与每单成本</li>
-                <li><strong>跨境与 OSS 税务</strong> — 增值税阈值、跨欧盟发货的清关延误</li>
+                <li><strong>Fulfilment SLA</strong> &mdash; on-time rate, late shipments, root-cause flagging</li>
+                <li><strong>Inventory &amp; stock alerts</strong> &mdash; safety-stock breaches, slow-movers, days of cover</li>
+                <li><strong>Returns &amp; complaints</strong> &mdash; rate, reasons, by SKU, with trend lines</li>
+                <li><strong>Marketplace performance</strong> &mdash; Allegro, Empik, Mall &mdash; orders, ratings, buy-box share</li>
+                <li><strong>Paczkomaty &amp; courier mix</strong> &mdash; InPost, DPD, DHL splits with cost per shipment</li>
+                <li><strong>Cross-border &amp; OSS</strong> &mdash; VAT thresholds, customs holdups for EU-wide shipping</li>
             </ul>
         </article>
 
@@ -829,18 +829,18 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
                 </div>
                 <div>
-                    <h3 class="panel-title">效果与运营</h3>
-                    <div class="panel-sub">SLA · KPI 追踪 · 健康度</div>
+                    <h3 class="panel-title">Performance &amp; Operations</h3>
+                    <div class="panel-sub">SLA · KPI tracker · Health</div>
                 </div>
             </div>
-            <p class="panel-desc">整个项目的"指挥塔"。第一阶段定下的 KPI 集中呈现、我们的每一项承诺与实际值对照展示、成功奖励的阈值清晰可见 — 让总部一眼判断项目是稳健、领先还是落后。</p>
+            <p class="panel-desc">The control tower for the whole programme. Phase-1 KPIs in one place, every commitment made by us shown against actuals, success-bonus thresholds visible &mdash; so HQ can see at a glance whether the programme is on, ahead or behind.</p>
             <ul class="panel-list">
-                <li><strong>KPI 追踪</strong> — 实时对照第一阶段目标,成功奖励的红线一目了然</li>
-                <li><strong>项目健康度</strong> — 趋势线、异常告警、AI 标记的风险点</li>
-                <li><strong>AI 接待表现</strong> — 来电量、线索质量评分、响应时长</li>
-                <li><strong>团队动态</strong> — 本周交付了什么、队列里还有什么、谁在做什么</li>
-                <li><strong>合规与安全</strong> — GDPR 与 NIS2 状态、审计追踪、访问日志</li>
-                <li><strong>账单与奖励测算</strong> — 固定费用 + 成功奖励的拆解,数学公式透明</li>
+                <li><strong>KPI tracker</strong> &mdash; live status against the Phase-1 targets, success-bonus lines visible</li>
+                <li><strong>Programme health</strong> &mdash; trend lines, anomaly alerts, AI-flagged risks</li>
+                <li><strong>AI reception performance</strong> &mdash; call volumes, lead-quality scoring, response times</li>
+                <li><strong>Team activity</strong> &mdash; what we shipped this week, what&rsquo;s queued, who&rsquo;s on what</li>
+                <li><strong>Compliance &amp; security</strong> &mdash; GDPR &amp; NIS2 status, audit trail, access logs</li>
+                <li><strong>Invoices &amp; bonus calc</strong> &mdash; Fixed Cost + Success Bonus breakdown, transparent math</li>
             </ul>
         </article>
     </div>
@@ -851,9 +851,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <section class="sec-section dark">
 <div class="container">
     <div class="sec-section-header">
-        <div class="sec-eyebrow">为海外总部而打造</div>
-        <h2 style="color:var(--wh)">为从未亲临华沙的高管而设计。</h2>
-        <p style="color:rgba(255,255,255,.6)">最需要这份仪表盘的人,往往坐在斯德哥尔摩、慕尼黑、米兰、伦敦或纽约的办公室里。产品就是为他们的现实而打造 — 跨时区、跨币种、跨语言,而且他们很可能在出租车后座用手机翻它。</p>
+        <div class="sec-eyebrow">Built for HQ from abroad</div>
+        <h2 style="color:var(--wh)">Designed for the executives who never land in Warsaw.</h2>
+        <p style="color:rgba(255,255,255,.6)">Most of the people who need this dashboard most are sitting in Stockholm, Munich, Milan, London or New York. The product is built for their reality &mdash; time-zone, currency, language, and the fact they&rsquo;re reading it on a phone in a taxi.</p>
     </div>
 
     <div class="hq-grid">
@@ -861,43 +861,43 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
             <div class="hq-ico">
                 <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
             </div>
-            <h4>多币种,并排显示</h4>
-            <p>每一项金额都以<strong>波兰兹罗提(PLN)与您的总部货币</strong>同时呈现:EUR、USD、GBP、SEK、NOK、CHF、JPY。汇率每日刷新,汇率波动的影响与底层业务表现分离呈现。</p>
+            <h4>Multi-currency, side-by-side</h4>
+            <p>Every monetary value shown in <strong>PLN and your HQ currency</strong>: EUR, USD, GBP, SEK, NOK, CHF, JPY. FX rates refreshed daily, exchange-rate impact isolated from underlying business performance.</p>
         </div>
         <div class="hq-card">
             <div class="hq-ico">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
             </div>
-            <h4>您的时区,我们的时间戳</h4>
-            <p>所有时间戳本地化到您的时区,同时附上华沙时间。<strong>"12 分钟前同步"</strong>是指对您来说的 12 分钟前,不是对别人。</p>
+            <h4>Your time zone, our timestamps</h4>
+            <p>All timestamps localised to your time zone, with the Warsaw time shown alongside. <strong>&ldquo;Synced 12 minutes ago&rdquo;</strong> means twelve minutes ago for you, not for someone else.</p>
         </div>
         <div class="hq-card">
             <div class="hq-ico">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
             </div>
-            <h4>中英波三语切换</h4>
-            <p>任一视图可切换语言。波兰语的 KPI 名称、经销商名称与渠道名称保留原始波兰语形态 — <strong>这样您看到的字眼,和本地团队说出来的字眼是一致的</strong>。</p>
+            <h4>English &amp; Polish, side-by-side</h4>
+            <p>Toggle the language for any view. Polish KPI names, distributor names and channel names stay in their original Polish form &mdash; <strong>so what you read matches what your local team says</strong>.</p>
         </div>
         <div class="hq-card">
             <div class="hq-ico">
                 <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
             </div>
-            <h4>手机优先,而非将就手机</h4>
-            <p>全部功能都能在手机上跑:KPI、图表、下钻、导出。<strong>在出租车上看、把截图甩给 CFO、登机前等候的间隙下钻某个数字 — 都行。</strong></p>
+            <h4>Phone-first, not phone-tolerant</h4>
+            <p>The full feature set works on phone: KPIs, charts, drill-downs, exports. <strong>Read it in a taxi, share a screenshot with your CFO, drill into a number while waiting for boarding.</strong></p>
         </div>
         <div class="hq-card">
             <div class="hq-ico">
                 <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
             </div>
-            <h4>董事会汇报包,一键导出</h4>
-            <p>每月自动生成 PDF 形式的董事会汇报包:KPI 追踪、由我们团队撰写的叙述性点评、关键胜负与风险。<strong>已套用您公司的品牌样式 — 不用再修就可以转发。</strong></p>
+            <h4>Board-pack export, one click</h4>
+            <p>Auto-generated monthly board pack as PDF: KPI tracker, narrative commentary written by our team, top wins and risks. <strong>Branded for your company &mdash; ready to circulate without editing.</strong></p>
         </div>
         <div class="hq-card">
             <div class="hq-ico">
                 <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
             </div>
-            <h4>分享但不"广而告之"</h4>
-            <p>颗粒度权限管控:<strong>CEO 看到一切、CFO 看到财务与物流、董事会看到摘要</strong>。给顾问的只读链接、用于尽调与投资人评审的限时分享。</p>
+            <h4>Share without sharing the world</h4>
+            <p>Granular access: <strong>CEO sees everything, CFO sees finance &amp; logistics, board sees the summary</strong>. Read-only links for advisors, time-limited shares for due diligence and investor reviews.</p>
         </div>
     </div>
 </div>
@@ -908,25 +908,25 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <div class="container">
     <div class="mobile-row">
         <div class="mobile-text">
-            <div class="sec-eyebrow" style="margin-bottom:14px;display:inline-block">在手机上</div>
-            <h2>在<em>您从机场打车回家的路上</em>也好用,而不只是在办公桌前。</h2>
-            <p>大多数从海外管理波兰运营的高管,并不是在办公室里打开仪表盘 — 他们会在周日晚上、会议间隙、或是长途飞行落地之后查它。移动端是主视图,不是补充视图。</p>
+            <div class="sec-eyebrow" style="margin-bottom:14px;display:inline-block">On the phone</div>
+            <h2>Works in <em>your taxi from Arlanda,</em> not just at your desk.</h2>
+            <p>Most executives running a Polish operation from abroad don&rsquo;t check the dashboard from an office &mdash; they check it on a Sunday evening, between meetings, or after a long-haul flight. The mobile view is the primary view, not an afterthought.</p>
             <ul class="mobile-bullets">
                 <li>
                     <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                    <span><strong>完整的 KPI 卡片与图表</strong>都在手机上呈现 — 不是简化版摘要</span>
+                    <span><strong>Full KPI tiles &amp; charts</strong> on phone &mdash; not a simplified summary</span>
                 </li>
                 <li>
                     <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                    <span><strong>推送通知</strong>覆盖 KPI 异常、大额成交、异常告警</span>
+                    <span><strong>Push notifications</strong> for KPI breaches, big deals, anomaly alerts</span>
                 </li>
                 <li>
                     <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                    <span><strong>一键分享</strong>:把图表或 KPI 通过您日常用的工具转发给 CFO</span>
+                    <span><strong>One-tap share</strong> to forward a chart or KPI to your CFO via the channel you already use</span>
                 </li>
                 <li>
                     <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                    <span><strong>仪表盘内置 AI 助手</strong>:问一句"上周营收为什么掉了?"就能拿到附带底层数据的书面答复</span>
+                    <span><strong>AI assistant</strong> on the dashboard: ask &ldquo;why did revenue drop last week?&rdquo; and get a written answer with the underlying data</span>
                 </li>
             </ul>
         </div>
@@ -935,34 +935,34 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
                 <div class="phone-screen">
                     <div class="phone-notch"></div>
                     <div class="phone-head">
-                        <div class="phone-greet">晚上好,<strong>Marcus</strong></div>
+                        <div class="phone-greet">Good evening,<strong>Marcus</strong></div>
                         <div class="phone-av">MJ</div>
                     </div>
-                    <div class="phone-live">实时 · 刚刚</div>
+                    <div class="phone-live">Live · Just now</div>
                     <div class="phone-tiles">
                         <div class="phone-tile">
-                            <div class="phone-tile-lbl">本月营收</div>
+                            <div class="phone-tile-lbl">Revenue MTD</div>
                             <div class="phone-tile-val">€248k</div>
                             <div class="phone-tile-delta">+18.2%</div>
                         </div>
                         <div class="phone-tile">
-                            <div class="phone-tile-lbl">管道</div>
+                            <div class="phone-tile-lbl">Pipeline</div>
                             <div class="phone-tile-val">€1.84M</div>
-                            <div class="phone-tile-delta">47 笔商机</div>
+                            <div class="phone-tile-delta">47 deals</div>
                         </div>
                         <div class="phone-tile">
-                            <div class="phone-tile-lbl">营销 ROI</div>
+                            <div class="phone-tile-lbl">Mkt ROI</div>
                             <div class="phone-tile-val">4.2×</div>
                             <div class="phone-tile-delta">-12% CAC</div>
                         </div>
                         <div class="phone-tile">
                             <div class="phone-tile-lbl">SLA</div>
                             <div class="phone-tile-val">96.4%</div>
-                            <div class="phone-tile-delta">准时</div>
+                            <div class="phone-tile-delta">on time</div>
                         </div>
                     </div>
                     <div class="phone-chart">
-                        <div class="phone-chart-head"><span>营收 · 12 周</span><span style="color:var(--g)">€248k</span></div>
+                        <div class="phone-chart-head"><span>Revenue · 12W</span><span style="color:var(--g)">€248k</span></div>
                         <svg viewBox="0 0 200 55" preserveAspectRatio="none">
                             <defs><linearGradient id="phg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#c8963e" stop-opacity=".45"/><stop offset="100%" stop-color="#c8963e" stop-opacity="0"/></linearGradient></defs>
                             <path d="M0 42 L20 38 L40 36 L60 30 L80 32 L100 24 L120 22 L140 16 L160 14 L180 10 L200 6 L200 55 L0 55 Z" fill="url(#phg)"/>
@@ -987,29 +987,29 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <section class="sec-section light">
 <div class="container">
     <div class="sec-section-header">
-        <div class="sec-eyebrow">底层是怎么搭建的</div>
-        <h2>一个平台,<em>您的数据</em>,您的账号。</h2>
-        <p>仪表盘从我们<em>以您的名义</em>搭建的系统中读取实时数据 — CRM、ERP、广告账户、GA4、电商平台 API — 汇成一份统一视图。一切建在您拥有的账户上,密钥您自己保管,由通过国家安全审查的 CTO 审计把关。</p>
+        <div class="sec-eyebrow">How it&rsquo;s built</div>
+        <h2>One platform, <em>your data</em>, your accounts.</h2>
+        <p>The dashboard pulls live data from the systems we set up <em>in your name</em> &mdash; CRM, ERP, ad accounts, GA4, marketplace APIs &mdash; into a unified view. Built on accounts you own, with credentials you keep, audited by our state-cleared CTO.</p>
     </div>
 
     <div class="int-grid">
         <div class="int-card">
             <div class="int-card-head">
                 <div class="int-card-ico"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg></div>
-                <h4>实时数据,贯穿所有源头</h4>
+                <h4>Live data, every source</h4>
             </div>
-            <p>仪表盘直接读取工作真正发生的系统:<strong>您的 CRM、您的 ERP、您的广告账户、GA4、电商平台 API、AI 接待日志</strong>。不再有复制粘贴、不再有月度文件回收、不再有"代理商 PDF"瓶颈。</p>
-            <p>系统没有 API,我们就替您把集成搭出来。数据格式打架,我们就替您对账整合。这些过程仪表盘都帮您隐藏掉了 — 您看到的就是一份一致的视图。</p>
-            <div class="int-tags"><span class="int-tag">CRM 实时</span><span class="int-tag">ERP/财务</span><span class="int-tag">广告 API</span><span class="int-tag">GA4 + 服务端</span><span class="int-tag">Allegro · Empik · Mall</span></div>
+            <p>The dashboard reads from the systems where work actually happens: <strong>your CRM, your ERP, your ad accounts, GA4, marketplace APIs, AI reception logs</strong>. No copy-paste, no monthly file dumps, no agency-PDF bottleneck.</p>
+            <p>Where a system doesn&rsquo;t have an API we build the integration. Where data formats clash we reconcile them. The dashboard hides all of that &mdash; what you see is one consistent view.</p>
+            <div class="int-tags"><span class="int-tag">CRM live</span><span class="int-tag">ERP/finance</span><span class="int-tag">Ad APIs</span><span class="int-tag">GA4 + server-side</span><span class="int-tag">Allegro · Empik · Mall</span></div>
         </div>
         <div class="int-card">
             <div class="int-card-head">
                 <div class="int-card-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-                <h4>封闭环境,由 CTO 审计</h4>
+                <h4>Closed environment, audited by our CTO</h4>
             </div>
-            <p>您的数据留在<strong>封闭环境</strong>中 — 隔离的云、AI 模型的私有部署,或带完整数据隔离的企业级合同。每一次集成都由我们的 CTO Karol(通过波兰国家安全审查)在接触客户数据之前亲自评审。</p>
-            <p>GDPR 内建合规。面向受监管行业对齐 NIS2。<strong>合规工作在后台安静运转 — 替您挡住可能高达数百万欧元的监管风险。</strong></p>
-            <div class="int-tags"><span class="int-tag">封闭环境</span><span class="int-tag">GDPR</span><span class="int-tag">NIS2 对齐</span><span class="int-tag">通过国家审查的 CTO</span><span class="int-tag">审计追踪</span></div>
+            <p>Your data stays in <strong>closed environments</strong> &mdash; isolated cloud, private deployments of AI models, or enterprise contracts with full data isolation. Every integration is reviewed by Karol, our CTO (cleared at Polish state-security level) before it touches client data.</p>
+            <p>GDPR-compliant by design. NIS2-aligned for regulated sectors. <strong>The compliance work runs quietly &mdash; protecting you against regulatory exposure that can run into millions of euros.</strong></p>
+            <div class="int-tags"><span class="int-tag">Closed-env</span><span class="int-tag">GDPR</span><span class="int-tag">NIS2-aligned</span><span class="int-tag">State-cleared CTO</span><span class="int-tag">Audit trail</span></div>
         </div>
     </div>
 </div>
@@ -1019,11 +1019,11 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <section class="sec-cta">
 <div class="container">
     <div class="sec-cta-inner">
-        <h2>想看看您的波兰仪表盘实际会是什么样?</h2>
-        <p>30 分钟,告诉我们您董事会关心哪些 KPI、您今天用什么衡量成功。我们会为您实地演示一份同类客户的实时仪表盘,并勾勒出您从第一天起会看到的内容。</p>
+        <h2>Want to see what your Polish dashboard would actually look like?</h2>
+        <p>30 minutes. Tell us what KPIs matter to your board and how you measure success today. We&rsquo;ll walk you through a live dashboard for a comparable client and sketch what yours would show on day one.</p>
         <div class="sec-cta-row">
-            <a href="../#contact" class="btn btn-primary">预约 30 分钟咨询 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="../ai-tools/" class="btn btn-secondary">查看完整的数字化技术栈</a>
+            <a href="../#contact" class="btn btn-primary">Book a discovery call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="../ai-tools/" class="btn btn-secondary">See the full digitalization stack</a>
         </div>
     </div>
 </div>
@@ -1031,8 +1031,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 <!-- FOOTER -->
 <footer class="footer"><div class="container"><div class="footer-inner">
-<span>© 2025 AIsolution4.you · 波兰波兹南</span>
-<div><a href="../">中文首页</a> · <a href="../en/dashboard/">English</a> · <a href="../#contact">联系我们</a></div>
+<span>© 2025 AIsolution4.you · Poznań, Poland</span>
+<div><a href="../">English home</a> · <a href="../../dashboard/">中文</a> · <a href="../#contact">Contact</a></div>
 </div></div></footer>
 
 <script>
