@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#dbb36a"/><stop offset="100%" stop-color="#c8963e"/></linearGradient></defs>
+<path d="M50 5L10 25v30c0 28 40 40 40 40s40-12 40-40V25L50 5z" fill="#0d2b2b" stroke="url(#g)" stroke-width="3"/>
+<circle cx="50" cy="42" r="5" fill="none" stroke="#c8963e" stroke-width="2"/>
+<line x1="50" y1="37" x2="50" y2="25" stroke="#c8963e" stroke-width="1.5"/>
+<circle cx="50" cy="23" r="3" fill="none" stroke="#c8963e" stroke-width="1.5"/>
+<line x1="44" y1="39" x2="32" y2="32" stroke="#c8963e" stroke-width="1.5"/>
+<circle cx="30" cy="31" r="3" fill="none" stroke="#c8963e" stroke-width="1.5"/>
+<line x1="56" y1="39" x2="68" y2="32" stroke="#c8963e" stroke-width="1.5"/>
+<circle cx="70" cy="31" r="3" fill="none" stroke="#c8963e" stroke-width="1.5"/>
+<line x1="50" y1="47" x2="50" y2="72" stroke="#c8963e" stroke-width="1.5" opacity=".4"/>
+<line x1="42" y1="55" x2="42" y2="68" stroke="#c8963e" stroke-width="1.5" opacity=".3"/>
+<line x1="58" y1="53" x2="58" y2="68" stroke="#c8963e" stroke-width="1.5" opacity=".3"/>
+</svg>
