@@ -9,18 +9,22 @@
         if (forced) {
             localStorage.setItem('a4u_lang', forced);
             if (forced === 'en') { window.location.replace('en/'); return; }
-            if (forced === 'zh') { return; }
+            if (forced === 'zh') {
+                // Clean URL by removing ?lang=zh, stay on this page
+                url.searchParams.delete('lang');
+                window.history.replaceState({}, '', url.pathname + url.hash);
+                return;
+            }
         }
         var saved = localStorage.getItem('a4u_lang');
         if (saved === 'en') { window.location.replace('en/'); return; }
         if (saved === 'zh') { return; }
-        // No saved preference - detect from browser
         var langs = navigator.languages || [navigator.language || ''];
-        var isZh = langs.some(function(l){ return /^zh\b/i.test(l); });
+        var isZh = langs.some(function(l){ return /^zh/i.test(l); });
         if (!isZh) {
             window.location.replace('en/');
         }
-    } catch(e) { /* fail silently */ }
+    } catch(e) {}
 })();
 </script>
 
@@ -474,7 +478,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <li><a href="what-we-do/">服务内容</a></li>
     <li><a href="how-we-work/">合作方式</a></li>
     <li><a href="#team">团队</a></li>
-    <li><a href="en/" class="nav-lang">EN</a></li>
+    <li><a href="en/?lang=en" class="nav-lang">EN</a></li>
 </ul>
 <a href="#contact" class="nav-cta">预约咨询</a>
 <a href="en/?lang=en" class="nav-lang-mob">EN</a>
@@ -1273,7 +1277,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <div class="container">
     <div class="footer-inner">
         <span>© 2025 AIsolution4.you · 波兰 波兹南</span>
-        <div><a href="en/" style="color:var(--g)">English</a></div>
+        <div><a href="en/?lang=en" style="color:var(--g)">English</a></div>
     </div>
 </div>
 </footer>

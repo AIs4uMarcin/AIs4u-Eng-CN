@@ -6,7 +6,12 @@
     try {
         var url = new URL(window.location.href);
         var forced = url.searchParams.get('lang');
-        if (forced) { localStorage.setItem('a4u_lang', forced); }
+        if (forced) {
+            localStorage.setItem('a4u_lang', forced);
+            // Clean URL by removing ?lang=
+            url.searchParams.delete('lang');
+            window.history.replaceState({}, '', url.pathname + url.hash);
+        }
     } catch(e) {}
 })();
 </script>
@@ -374,6 +379,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .nav-lang-mob:hover{background:var(--g);color:var(--td)}
 @media(max-width:900px){.nav-lang-mob{display:inline-flex;margin-right:10px}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https://aisolution4.you/en/dashboard/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aisolution4.you/en/"},{"@type":"ListItem","position":2,"name":"Client Live Dashboard - Real-time HQ View","item":"https://aisolution4.you/en/dashboard/"}]},{"@type":"Service","@id":"https://aisolution4.you/en/dashboard/#service","name":"Client Live Dashboard - Real-time HQ View","url":"https://aisolution4.you/en/dashboard/","description":"Single live dashboard giving HQ from abroad a complete view of the Polish programme: sales, performance, logistics, marketing. Multi-currency, mobile-first, board-pack export.","serviceType":"Business Intelligence","provider":{"@id":"https://aisolution4.you/#organization"},"areaServed":[{"@type":"Country","name":"Poland"},{"@type":"Place","name":"Central and Eastern Europe"}],"inLanguage":"en"},{"@type":"WebPage","@id":"https://aisolution4.you/en/dashboard/#webpage","url":"https://aisolution4.you/en/dashboard/","name":"Client Live Dashboard - Real-time HQ View","description":"Single live dashboard giving HQ from abroad a complete view of the Polish programme: sales, performance, logistics, marketing. Multi-currency, mobile-first, board-pack export.","inLanguage":"en","isPartOf":{"@id":"https://aisolution4.you/en/#website"},"breadcrumb":{"@id":"https://aisolution4.you/en/dashboard/#breadcrumb"},"about":{"@id":"https://aisolution4.you/en/dashboard/#service"}}]}</script>
 </head>
 <body>
 
@@ -394,7 +400,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <li><a href="../what-we-do/">What we do</a></li>
     <li><a href="../how-we-work/">How we work</a></li>
     <li><a href="../#team">Team</a></li>
-    <li><a href="../../dashboard/" class="nav-lang">中文</a></li>
+    <li><a href="../../dashboard/?lang=zh" class="nav-lang">中文</a></li>
 </ul>
 <a href="../#contact" class="nav-cta">Book a call</a>
 <a href="../../dashboard/?lang=zh" class="nav-lang-mob">中文</a>
@@ -1046,7 +1052,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <!-- FOOTER -->
 <footer class="footer"><div class="container"><div class="footer-inner">
 <span>© 2025 AIsolution4.you · Poznań, Poland</span>
-<div><a href="../">English home</a> · <a href="../../dashboard/">中文</a> · <a href="../#contact">Contact</a></div>
+<div><a href="../">English home</a> · <a href="../../dashboard/?lang=zh">中文</a> · <a href="../#contact">Contact</a></div>
 </div></div></footer>
 
 <script>

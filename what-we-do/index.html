@@ -10,13 +10,17 @@
         if (forced) {
             localStorage.setItem('a4u_lang', forced);
             if (forced === 'en') { window.location.replace('../en/' + pageName + '/'); return; }
-            if (forced === 'zh') { return; }
+            if (forced === 'zh') {
+                url.searchParams.delete('lang');
+                window.history.replaceState({}, '', url.pathname + url.hash);
+                return;
+            }
         }
         var saved = localStorage.getItem('a4u_lang');
         if (saved === 'en') { window.location.replace('../en/' + pageName + '/'); return; }
         if (saved === 'zh') { return; }
         var langs = navigator.languages || [navigator.language || ''];
-        var isZh = langs.some(function(l){ return /^zh\b/i.test(l); });
+        var isZh = langs.some(function(l){ return /^zh/i.test(l); });
         if (!isZh) {
             window.location.replace('../en/' + pageName + '/');
         }
@@ -192,6 +196,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .nav-lang-mob:hover{background:var(--g);color:var(--td)}
 @media(max-width:900px){.nav-lang-mob{display:inline-flex;margin-right:10px}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https://aisolution4.you/what-we-do/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aisolution4.you/"},{"@type":"ListItem","position":2,"name":"服务内容 - 市场进入的四大板块","item":"https://aisolution4.you/what-we-do/"}]},{"@type":"Service","@id":"https://aisolution4.you/what-we-do/#service","name":"服务内容 - 市场进入的四大板块","url":"https://aisolution4.you/what-we-do/","description":"销售与分销、品牌与网站本地化、效果营销、AI 驱动的数字化 - 一个波兰市场进入项目所需的四大相连板块。","serviceType":"Market Entry","provider":{"@id":"https://aisolution4.you/#organization"},"areaServed":[{"@type":"Country","name":"Poland"},{"@type":"Place","name":"Central and Eastern Europe"}],"inLanguage":"zh-CN"},{"@type":"WebPage","@id":"https://aisolution4.you/what-we-do/#webpage","url":"https://aisolution4.you/what-we-do/","name":"服务内容 - 市场进入的四大板块","description":"销售与分销、品牌与网站本地化、效果营销、AI 驱动的数字化 - 一个波兰市场进入项目所需的四大相连板块。","inLanguage":"zh-CN","isPartOf":{"@id":"https://aisolution4.you/#website"},"breadcrumb":{"@id":"https://aisolution4.you/what-we-do/#breadcrumb"},"about":{"@id":"https://aisolution4.you/what-we-do/#service"}}]}</script>
 </head>
 <body>
 
@@ -212,7 +217,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <li><a href="../what-we-do/">我们的服务</a></li>
     <li><a href="../how-we-work/">合作方式</a></li>
     <li><a href="../#team">团队</a></li>
-    <li><a href="../en/what-we-do/" class="nav-lang">EN</a></li>
+    <li><a href="../en/what-we-do/?lang=en" class="nav-lang">EN</a></li>
 </ul>
 <a href="../#contact" class="nav-cta">预约咨询</a>
 <a href="../en/what-we-do/?lang=en" class="nav-lang-mob">EN</a>
@@ -420,7 +425,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <!-- FOOTER -->
 <footer class="footer"><div class="container"><div class="footer-inner">
 <span>© 2025 AIsolution4.you · 波兹南，波兰</span>
-<div><a href="../">中文首页</a> · <a href="../en/what-we-do/">English</a> · <a href="../#contact">联系我们</a></div>
+<div><a href="../">中文首页</a> · <a href="../en/what-we-do/?lang=en">English</a> · <a href="../#contact">联系我们</a></div>
 </div></div></footer>
 
 <script>
